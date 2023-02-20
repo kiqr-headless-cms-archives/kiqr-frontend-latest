@@ -1,0 +1,41 @@
+{
+  "extends": "../../.eslintrc.json",
+  "plugins": ["10x"],
+	"env": { "node": true },
+  "rules": {
+    "10x/auto-import": [
+			"error",
+			{
+				"imports": {
+					"fs": "import fs from 'fs'",
+					"fse": "import * as fse from 'fs-extra'",
+					"path": "import path from 'path'",
+					"inquirer": "import inquirer from 'inquirer'",
+
+					// Commands
+					"initCommand": "import { initCommand } from '@commands/init.js'",
+
+					// Services
+					"installKiqrFiles": "import { installKiqrFiles } from '@services/install-kiqr-files.js'",
+
+					// Utilities
+					"copyKiqrFilesTemplate": "import { copyKiqrFilesTemplate } from '@utils/copy-kiqr-files-template.js'",
+					"findKiqrConfig": "import { findKiqrConfig } from '@utils/find-kiqr-config.js'",
+					"normalizeConfig": "import { normalizeConfig } from '@utils/normalize-config.js'",
+					"resolveConfig": "import { resolveConfig } from '@utils/resolve-config.js'",
+
+					// Prompts
+					"selectTemplatePrompt": "import { selectTemplatePrompt } from '@prompts/select-template-prompt.js'",
+					"logger": "import { logger } from '@lib/logger.js'",
+
+					// Errors
+					"ConfigError": "import { ConfigError } from '~errors/config-error.js'",
+					"ProjectNotFoundError": "import { ProjectNotFoundError } from '~errors/project-not-found-error.js'",
+
+					// Types
+					"KiqrConfig": "import type { KiqrConfig } from '~types/kiqr-config.js'"
+				}
+			}
+		]
+  }
+}

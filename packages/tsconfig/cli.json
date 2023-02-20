@@ -1,0 +1,14 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "lib": ["ES2019"],
+    "target": "ES2019",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "allowJs": false,
+    "module": "node16",
+    "moduleResolution": "node16",
+    "strict": false
+  }
+}

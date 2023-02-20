@@ -1,0 +1,17 @@
+{
+  "extends": "@kiqr/tsconfig/cli.json",
+  "exclude": ["templates"],
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": "src",
+    "paths": {
+      "~commands/*": ["commands/*"],
+      "~errors/*": ["errors/*"],
+      "~lib/*": ["lib/*"],
+      "~utils/*": ["utils/*"],
+      "~services/*": ["services/*"],
+      "~prompts/*": ["prompts/*"],
+      "~types/*": ["types/*"],
+    }
+  }
+}
