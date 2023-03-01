@@ -18,6 +18,7 @@
   "author": "kjellberg",
   "license": "MIT",
   "dependencies": {
+    "@kiqr/core-api": "^0.14.0",
     "client-oauth2": "^4.3.3",
     "commander": "^10.0.0",
     "configstore": "^6.0.0",
@@ -25,6 +26,7 @@
     "findup-sync": "^5.0.0",
     "fs-extra": "^11.1.0",
     "inquirer": "^9.1.4",
+    "node-fetch": "^3.3.0",
     "open": "^8.4.2",
     "winston": "^3.8.2"
   },

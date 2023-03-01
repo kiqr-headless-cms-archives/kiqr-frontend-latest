@@ -14,12 +14,8 @@ export const loginWithOauth = async () => {
   logger.info('Waiting for interaction in browser...')
   const tokenData = await pollForAccessToken()
 
-  logger.info(
-    'Writing access token to ~/.config/configstore/kiqr-global-config.json'
-  )
-
   globalConfig.set('accessToken', tokenData.accessToken)
   globalConfig.set('refreshToken', tokenData.refreshToken)
 
-  logger.info('Successfully logged in!')
+  logger.info('Successfully signed in!')
 }

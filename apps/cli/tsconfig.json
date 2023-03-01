@@ -12,6 +12,7 @@
       "~services/*": ["services/*"],
       "~prompts/*": ["prompts/*"],
       "~types/*": ["types/*"],
+      "~apis/*": ["apis/*"],
     }
   }
 }

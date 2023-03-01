@@ -16,6 +16,9 @@
 
 					// Commands
 					"initCommand": "import { initCommand } from '~commands/init.js'",
+					"loginCommand": "import { loginCommand } from '~commands/login.js'",
+					"inspectCommand": "import { inspectCommand } from '~commands/inspect.js'",
+					"pushCommand": "import { pushCommand } from '~commands/push.js'",
 
 					// Services
 					"installKiqrFiles": "import { installKiqrFiles } from '~services/install-kiqr-files.js'",
@@ -26,6 +29,7 @@
 					"oauth": "import { oauth } from '~utils/oauth-client.js'",
 					"globalConfig": "import { globalConfig } from '~utils/global-config.js'",
 					"authorizationUrl": "import { authorizationUrl } from '~utils/oauth-client.js'",
+					"ensureValidToken": "import { ensureValidToken } from '~utils/ensure-valid-token.js'",
 
 					// Utilities -> Config
 					"findKiqrConfig": "import { findKiqrConfig } from '~utils/config/find-kiqr-config.js'",
@@ -40,6 +44,10 @@
 					// Errors
 					"ConfigError": "import { ConfigError } from '~errors/config-error.js'",
 					"ProjectNotFoundError": "import { ProjectNotFoundError } from '~errors/project-not-found-error.js'",
+
+					// Requets
+					"userApi": "import { userApi } from '~apis/user-api.js'",
+					"schemasApi": "import { schemasApi } from '~apis/schemas-api.js'",
 
 					// Types
 					"KiqrConfig": "import type { KiqrConfig } from '~types/kiqr-config.js'",
