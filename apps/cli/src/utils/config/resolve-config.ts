@@ -1,7 +1,7 @@
 import { ProjectNotFoundError } from '~errors/project-not-found-error.js'
 import type { KiqrConfig } from '~types/kiqr-config.js'
-import { findKiqrConfig } from '~utils/find-kiqr-config.js'
-import { normalizeConfig } from '~utils/normalize-config.js'
+import { findKiqrConfig } from '~utils/config/find-kiqr-config.js'
+import { normalizeConfig } from '~utils/config/normalize-config.js'
 
 export const resolveConfig = async (): Promise<KiqrConfig> => {
   const configFilePath = findKiqrConfig()

@@ -1,6 +1,6 @@
 import { Command } from 'commander'
 import util from 'util'
-import { resolveConfig } from '~utils/resolve-config.js'
+import { resolveConfig } from '~utils/config/resolve-config.js'
 
 export const inspectCommand = new Command()
   .name('inspect')

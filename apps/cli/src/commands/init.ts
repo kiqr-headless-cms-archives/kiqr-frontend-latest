@@ -1,8 +1,8 @@
 import { Command } from 'commander'
-import { findKiqrConfig } from 'utils/find-kiqr-config.js'
 import { logger } from '~lib/logger.js'
 import { selectTemplatePrompt } from '~prompts/select-template-prompt.js'
 import { installKiqrFiles } from '~services/install-kiqr-files.js'
+import { findKiqrConfig } from '~utils/config/find-kiqr-config.js'
 
 import path from 'path'
 

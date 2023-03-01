@@ -11,29 +11,39 @@
 					"fse": "import * as fse from 'fs-extra'",
 					"path": "import path from 'path'",
 					"inquirer": "import inquirer from 'inquirer'",
+					"express": "import express from 'express'",
+					"open": "import open from 'open'",
 
 					// Commands
-					"initCommand": "import { initCommand } from '@commands/init.js'",
+					"initCommand": "import { initCommand } from '~commands/init.js'",
 
 					// Services
-					"installKiqrFiles": "import { installKiqrFiles } from '@services/install-kiqr-files.js'",
+					"installKiqrFiles": "import { installKiqrFiles } from '~services/install-kiqr-files.js'",
 
 					// Utilities
-					"copyKiqrFilesTemplate": "import { copyKiqrFilesTemplate } from '@utils/copy-kiqr-files-template.js'",
-					"findKiqrConfig": "import { findKiqrConfig } from '@utils/find-kiqr-config.js'",
-					"normalizeConfig": "import { normalizeConfig } from '@utils/normalize-config.js'",
-					"resolveConfig": "import { resolveConfig } from '@utils/resolve-config.js'",
+					"copyKiqrFilesTemplate": "import { copyKiqrFilesTemplate } from '~utils/copy-kiqr-files-template.js'",
+					"pollForAccessToken": "import { pollForAccessToken } from '~utils/poll-for-access-token.js'",
+					"oauth": "import { oauth } from '~utils/oauth-client.js'",
+					"globalConfig": "import { globalConfig } from '~utils/global-config.js'",
+					"authorizationUrl": "import { authorizationUrl } from '~utils/oauth-client.js'",
+
+					// Utilities -> Config
+					"findKiqrConfig": "import { findKiqrConfig } from '~utils/config/find-kiqr-config.js'",
+					"normalizeConfig": "import { normalizeConfig } from '~utils/config/normalize-config.js'",
+					"validateConfig": "import { validateConfig } from '~utils/config/validate-config.js'",
+					"resolveConfig": "import { resolveConfig } from '~utils/config/resolve-config.js'",
 
 					// Prompts
-					"selectTemplatePrompt": "import { selectTemplatePrompt } from '@prompts/select-template-prompt.js'",
-					"logger": "import { logger } from '@lib/logger.js'",
+					"selectTemplatePrompt": "import { selectTemplatePrompt } from '~prompts/select-template-prompt.js'",
+					"logger": "import { logger } from '~lib/logger.js'",
 
 					// Errors
 					"ConfigError": "import { ConfigError } from '~errors/config-error.js'",
 					"ProjectNotFoundError": "import { ProjectNotFoundError } from '~errors/project-not-found-error.js'",
 
 					// Types
-					"KiqrConfig": "import type { KiqrConfig } from '~types/kiqr-config.js'"
+					"KiqrConfig": "import type { KiqrConfig } from '~types/kiqr-config.js'",
+					"KiqrGlobalConfig": "import type { KiqrGlobalConfig } from '~types/kiqr-global-config.js'"
 				}
 			}
 		]

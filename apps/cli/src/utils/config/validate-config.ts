@@ -16,15 +16,8 @@ export const validateConfig = (config: KiqrConfig) => {
     }
   }
 
-  const validateProjectId = (config: KiqrConfig) => {
-    if (config.projectId === undefined) {
-      throw new ConfigError('missing projectId')
-    }
-  }
-
   validateApiVersion(config)
   validateKind(config)
-  validateProjectId(config)
 
   return config
 }

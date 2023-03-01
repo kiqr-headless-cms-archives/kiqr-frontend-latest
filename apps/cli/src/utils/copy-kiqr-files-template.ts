@@ -20,7 +20,7 @@ export const copyKiqrFilesTemplate = (
   }
 
   const templateRootDir =
-    '/Users/rasmus/Development/kiqr/kiqr-frontend/apps/cli/templates'
+    '/Users/rasmus/Development/kiqr/kiqr-frontend/apps/cli/templates/projectfiles'
   const sharedTemplateFilesPath = path.resolve(templateRootDir, '_shared')
   const templateDirPath = path.resolve(templateRootDir, templateName)
 
