@@ -1,5 +1,6 @@
 import type { CreateSchemaOperationRequest } from '@kiqr/core-api'
 import { schemasApi } from '~apis/schemas-api.js'
+import { logger } from '~lib/logger.js'
 import { resolveConfig } from '~utils/config/resolve-config.js'
 
 export const pushToServer = async () => {
@@ -13,8 +14,12 @@ export const pushToServer = async () => {
     },
   }
 
+  logger.info('Uploading to KIQR.CLOUD..')
+
   await schemasApi.createSchema(payload).catch(async (error) => {
     const response = await error.response.json()
     console.log('error', response)
   })
+
+  logger.info('Upload succeded!')
 }
